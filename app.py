@@ -2,6 +2,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
+#https://cheat-sheet.streamlit.app/
+
 # Define feature names and descriptions
 # When you use this - replace these features with the cols from df.columns 
 # Do not include your target!
@@ -14,8 +16,6 @@ feature_names = ['Mean Radius', 'Mean Texture', 'Mean Perimeter', 'Mean Area', '
 # Add a header and text
 st.header('Getting Started with Streamlit')
 st.write("This app will help you explore basic Streamlit components.")
-
-https://cheat-sheet.streamlit.app/
 
 # Add a slider
 age = st.slider('Select your age:', 0, 100, 25)
