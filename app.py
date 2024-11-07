@@ -15,6 +15,8 @@ feature_names = ['Mean Radius', 'Mean Texture', 'Mean Perimeter', 'Mean Area', '
 st.header('Getting Started with Streamlit')
 st.write("This app will help you explore basic Streamlit components.")
 
+https://cheat-sheet.streamlit.app/
+
 # Add a slider
 age = st.slider('Select your age:', 0, 100, 25)
 st.write(f"Your selected age is: {age}")
