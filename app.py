@@ -11,7 +11,18 @@ feature_names = ['Mean Radius', 'Mean Texture', 'Mean Perimeter', 'Mean Area', '
                  'SE Concave Points', 'SE Symmetry', 'SE Fractal Dimension', 'Worst Radius', 'Worst Texture', 'Worst Perimeter',
                  'Worst Area', 'Worst Smoothness', 'Worst Compactness', 'Worst Concavity', 'Worst Concave Points', 'Worst Symmetry',
                  'Worst Fractal Dimension']
+# Add a header and text
+st.header('Getting Started with Streamlit')
+st.write("This app will help you explore basic Streamlit components.")
 
+# Add a slider
+age = st.slider('Select your age:', 0, 100, 25)
+st.write(f"Your selected age is: {age}")
+
+# Add a text input
+name = st.text_input('Enter your name:')
+if name:
+    st.write(f"Hello, {name}!")
 def main():
     st.title('Breast Cancer Prediction App by Dr. Lee')
     st.write("Enter the values for the features to get a prediction.")
