@@ -19,6 +19,8 @@ st.write("This app will help you explore basic Streamlit components.")
 age = st.slider('Select your age:', 0, 100, 25)
 st.write(f"Your selected age is: {age}")
 
+st.button('Hit me')
+
 # Add a text input
 name = st.text_input('Enter your name:')
 if name:
